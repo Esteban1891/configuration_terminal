@@ -21,10 +21,10 @@ let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
 "Mostrar caracter al final de la linea o caracter invisible
 set lcs=tab:·\ ,trail:·,eol:¬,nbsp:_ "configura los caracteres de entorno
-set list				"Resalta los resultados de las busquedas
-set title				"muestra el nombre del archivo en la barra de titulo
-set shortmess=atI		"quita el mensaje inicial del VIM
-set cursorline			"resalta la linea del cusrsor"
+set list       			     		    "Resalta los resultados de las busquedas
+set title					    	     	 	    "muestra el nombre del archivo en la barra de titulo
+set shortmess=atI							    	     "quita el mensaje inicial del VIM
+set cursorline									     	       "resalta la linea del cusrsor"
 set smarttab
 set tabstop=4
 set shiftwidth=4
@@ -74,18 +74,18 @@ Plugin 'codota/tabnine-vim'
 "Plugin 'AutoClose'
 Plugin 'ekalinin/dockerfile.vim'
 call vundle#end()            " required
-filetype plugin indent on		"requerid
+filetype plugin indent on      "requerid
 "filetype plugin on
 
 set omnifunc=syntaxcomplete#Complete
 
 function! StripWhitespace()
-	let save_cursor = getpos(".")
-	let old_query = getreg('/')
+	  let save_cursor = getpos(".")
+	      let old_query = getreg('/')
 
-	call setpos('.', save_cursor)
-	call setreg('/', old_query)
-endfunction
+	      call setpos('.', save_cursor)
+	      	   call setreg('/', old_query)
+		   endfunction
 
 " keyboard shorcut
 noremap <leader>ss :call StripWhitespace()<CR>
@@ -102,7 +102,7 @@ let g:syntastic_javascript_checkers = ['jscs']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let	NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=1
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -124,4 +124,4 @@ augroup END
 
 set noshowmode
 colorscheme Atelier_CaveDark
-"let g:indentLine_char = '▌'
+"let g:indentLine_char = '▌'01~
